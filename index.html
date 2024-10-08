@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Cileuksa</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .village-name {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 100px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Additional styles for responsiveness */
+        @media (max-width: 768px) {
+            .village-name {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="cileuksa.png" alt="Logo Desa" class="rounded-circle">
+                <span class="village-name">Desa Cileuksa</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">🏠 Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profil">🗺️ Profil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#potensi">🧑‍💼 Tokoh</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#berita">📰 Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">📞 Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desa Sejahtera</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .navbar-brand img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+        }
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+        }
+        .village-name {
+            margin-left: 10px;
+            font-weight: bold;
+        }
+        .section {
+            padding: 100px 0;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.5s ease, transform 0.5s ease;
+        }
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        /* Carousel styles */
+        .carousel-item {
+            height: 60vh;
+            min-height: 300px;
+            background: no-repeat center center scroll;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        .carousel-caption {
+            background-color: rgba(0,0,0,0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        /* Additional styles for responsiveness */
+        @media (max-width: 768px) {
+            .village-name {
+                font-size: 1rem;
+            }
+            .carousel-item {
+                height: 50vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <!-- Navbar content remains the same -->
+    </nav>
+
+    <main>
+        <section id="home" class="section">
+            <!-- Add carousel here -->
+            <div id="villageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#villageCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#villageCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#villageCarousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" style="background-image: url('ujangruhyadi2024.jpg')">
+                        <div class="carousel-caption">
+                            <h5>Bpk U. Ruhyadi</h5>
+                            <p>Kepala Desa Cileuksa Saat Ini</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('pdcil2024.jpg')">
+                        <div class="carousel-caption">
+                            <h5>Perangkat Desa Cileuksa</h5>
+                            <p>Selalu Siap Melayani Masyarakat Cileuksa</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item" style="background-image: url('masy2024.jpg')">
+                        <div class="carousel-caption">
+                            <h5>Warga</h5>
+                            <p>Ikut Serta Dalam Memperingati HUT RI 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#villageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#villageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- Other sections remain the same -->
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll animation script remains the same
+    </script>
+</body>
+</html>
+
+    <main>
+        <section id="home" class="section">
+            <div class="container">
+                <h1 class="text-center mb-4">Selamat Datang di Website Desa Cileuksa</h1>
+                <p class="text-center">Desa yang indah, makmur, dan berbudaya.</p>
+                
+            </div>
+        </section>
+
+        <section id="profil" class="section bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">🗺️ Profil Desa</h2>
+                <p>Wilayah ini memiliki areal pesawahan, aliran air serta pesona panorama alam nan indah. Desa Cileuksa terletak diantara Kaki Gunung Gede Jasinga dan Kaki Gunung Halimun tentu pula wilayah ini dihiasi gugusan pegunungan yang punya panorama elok.Lebih lengkapnya berada di Kecamatan Sukajaya Kabupaten Bogor Provinsi Jawa Barat. Desa ini memiliki penduduk yang ramah dan berbagai potensi wisata alam yang menarik.</p>
+                <p>Wisata Alam Yang Terkenal Diantaranya Curug Ciear dan masih banyak lagi, serta terkenal Dengan Sirkuit JA RACING yakni bagi pembalap motor trail.
+                    Apih Ujang menyampaikan bahwa di wilayahnya tersebut pengembangan wisata berbasis agro tentu akan dapat memaksimalkan beberapa hal diantaranya ketersediaan bahan pangan yang terjamin serta meningkatnya berbagai hal yang berkaitan sengan pariwisata 
+Definisi dari agrowisata sendiri adalah rangkaian kegiatan wisata yang memanfaatkan sektor pertanian atau perkebunan sebagai objek utamanya, sehingga tentu saja pemandangan alam yang khas dengan kawasan pertanian serta beragam aktivitas terkait akan menjadi objek utama yang ditonjolkan.
+
+Adanya kegiatan agrowisata juga diharapkan akan dapat memperluas wawasan serta pengalaman wisata yang berbeda bagi para pengunjungnya.
+
+
+
+Nantinya, kata Apih Ujang, Pengelolaan kawasan agrowisata perlu dilakukan dengan baik dan matang. Hal ini ditujukan agar pengembangan kawasan agrowisata dapat memberikan manfaat yang maksimal. Ada beberapa manfaat yang diperoleh dari pengembangan agrowisata.
+
+
+“Tentu diantaranya akan meningkatkan konservasi lingkungan, meningkatkan nilai estetika dan keindahan alam, memberikan nilai rekreasi, meningkatkan kegiatan ilmiah dan pengembangan ilmu pengetahuan juga dapat mengembangkan ekonomi masyarakat sekitar,” katanya.
+                </p>
+            </div>
+        </section>
+
+        <section id="potensi" class="section">
+            <div class="container">
+                <h2 class="text-center mb-4">🧑‍💼 Tokoh Desa</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">H. Ade Ruhandi, S.E</h5>
+                                <p class="card-text">Beliau adalah kepala Desa sebelum Bpk U. Ruhyadi yang setelah menjabat kepala desa beliau menjadi bagian dari DPRD Kab. Bogor serta Calon Bupato Bogor pada tahun 2018. Dan sekarang beliau menjabat sebagai wakil Bupati Bogor Periode 2024-2029.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">data belum ditambahkan</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">data belum ditambahkan</h5>
+                                <p class="card-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="berita" class="section bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">📰 Berita Terbaru</h2>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+
+
+                        <section id="external-news" class="section">
+                            <div class="container">
+                                <h2 class="text-center mb-4">Berita Terkini</h2>
+                                <p class="text-center mb-4">Berita terkini dari sumber eksternal:</p>
+                                <div class="ratio ratio-16x9">
+                                    <iframe class="external-news-frame" src="https://www.anjangsana.id/wisata/menyusuri-potensi-desa-cileuksa-di-wilayah-barat-kabupaten-bogor/#:~:text=Desa%20Cileuksa,%20Kecamatan%20Sukajaya," allowfullscreen></iframe>
+                                </div>
+                                <p class="text-center mt-3">
+                                    <a href="https://www.example-news-site.com" target="_blank" rel="noopener noreferrer">Kunjungi situs berita untuk informasi lebih lanjut</a>
+                                </p>
+                            </div>
+                        </section>
+
+
+                        
+                      <h5 a hrep=""></h5>
+                        <p></p>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <h5></h5>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="kontak" class="section">
+            <div class="container">
+                <h2 class="text-center mb-4">📞 Hubungi Kami</h2>
+                <h6>E-mail Develover : jhoensoenarya@gmail.com</h6>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <form>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Nama">
+                            </div>
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" rows="3" placeholder="Pesan"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Desa Cileuksa. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Scroll animation
+        function checkVisibility() {
+            const sections = document.querySelectorAll('.section');
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                const isVisible = (rect.top <= window.innerHeight * 0.75 && rect.bottom >= 0);
+                if (isVisible) {
+                    section.classList.add('visible');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', checkVisibility);
+        window.addEventListener('resize', checkVisibility);
+        checkVisibility(); // Initial check
+    </script>
+</body>
+</html>
